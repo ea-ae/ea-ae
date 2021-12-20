@@ -1,7 +1,7 @@
 ## / iam *| ea-ae |* hello \
 
 * Coding since 13, now 20 and studying SE in university (graduating 2024).
-* Always learning: currently working on **SQL** and **ASP.NET**.
+* Currently learning more about **SQL** and **ASP.NET**.
 * Have a liking for challenging problems that involve complex systems (think concurrency & low-level networking).
 * Full-stack, but interest lies mostly in back-end.
 * Favorite language combo has to be **Python/C++**: powerful abstractions/flexibility + great performance/control.
