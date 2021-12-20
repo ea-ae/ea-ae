@@ -1,10 +1,10 @@
 ## / iam *| ea-ae |* hello \
 
 * Coding since 13, now 20 and studying SE in university (graduating 2024).
-* Constantly learning (currently **SQL** and **ASP.NET**).
-* Fancy challenging problems involving complex systems (think concurrency & low-level networking).
-* Full-stack, but interest mostly lies in back-end.
-* Favorite language combo has to be **Python/C++**: powerful abstractions/flexibility + great performance/control ... **C#** works too.
+* Always learning: currently working on **SQL** and **ASP.NET**.
+* Have a liking for challenging problems that involve complex systems (think concurrency & low-level networking).
+* Full-stack, but interest lies mostly in back-end.
+* Favorite language combo has to be **Python/C++**: powerful abstractions/flexibility + great performance/control. Oh, and **C#** works too.
 * [Here](https://nandgame.com/) are [some](https://userinyerface.com/game.html) cool [links](http://wiki.c2.com/?LanguageSmell) to [click]() on.
 
 ### Some tech I use:
