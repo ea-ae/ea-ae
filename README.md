@@ -1,10 +1,9 @@
 ## / iam *| ea-ae |* hello \
 
-* Coding since 13, now 20 and studying SE in university (graduating 2024).
+* Coding since 13-14, now 20 and studying SE in university (graduating 2024).
 * Currently learning more about **SQL** and **ASP.NET**.
-* Have a liking for challenging problems that involve complex systems (think concurrency & low-level networking).
-* Full-stack, but interest lies mostly in back-end.
-* Favorite language combo has to be **Python/C++**: powerful abstractions/flexibility + great performance/control.
+* Full-stack, but interest lies mostly in back-end & generally challenging systems.
+* Favorite language combo's **Python/C++**: powerful abstractions/flexibility + great performance/control.
 * [Here](https://nandgame.com/) are [some](https://userinyerface.com/game.html) cool [links](http://wiki.c2.com/?LanguageSmell) to [cl](https://refactoring.guru/design-patterns/catalog)-[li](https://learnxinyminutes.com/)-[ck](https://www.redblobgames.com/) on.
 
 ### Some tech I use:
@@ -19,8 +18,8 @@
 
 <img alt="Python" src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"><!--<img alt="Django" src="https://img.shields.io/badge/Django-2ba977?style=for-the-badge&logo=django&logoColor=white">--><img alt="C++" src="https://img.shields.io/badge/-C++-007ACC?style=for-the-badge&logo=cplusplus&logoColor=white"><img alt="C#" src="https://img.shields.io/badge/C%23-822c98?style=for-the-badge&logo=c-sharp&logoColor=white"><img alt="HTML" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"><img alt="CSS" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"><img alt="JS" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"><img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white">
 
-<!-- https://dev.to/envoy_/150-badges-for-github-pnk -->
-<!-- react, tailwind -->
+<!-- https://dev.to/envoy_/150-badges-for-github-pnk https://simpleicons.org/ -->
+<!-- react, tailwind, regex, etc -->
 
 <br>
 
