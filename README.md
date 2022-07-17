@@ -4,7 +4,7 @@
 * Currently learning more about **ASP.NET** and **SQL**.
 * Full-stack, but interest lies mainly in back-end development.
 * Favorite language combo's **Python/C++**.
-* [Here](https://nandgame.com/) are [some](https://userinyerface.com/game.html) cool [links](http://wiki.c2.com/?LanguageSmell) to [cl](https://refactoring.guru/design-patterns/catalog)-[li](https://learnxinyminutes.com/)-[ck](https://www.redblobgames.com/) on.
+* [Here](https://nandgame.com/) are [some](https://userinyerface.com/game.html) cool [links](http://wiki.c2.com/?LanguageSmell) to [cl](https://refactoring.guru/design-patterns/catalog)[li](https://learnxinyminutes.com/)[ck](https://www.redblobgames.com/) on.
 
 ### Some tech I've used:
 
