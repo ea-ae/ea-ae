@@ -27,5 +27,5 @@
 <br>
 
 <div>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ea-ae&theme=monokai#1"><img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ea-ae&theme=monokai#1"><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ea-ae&theme=monokai#1">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ea-ae&theme=monokai&update=1"><img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ea-ae&theme=monokai&update=1"><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ea-ae&theme=monokai&update=1">
 </div>
