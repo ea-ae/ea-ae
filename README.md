@@ -2,7 +2,7 @@
 
 * Currently studying software engineering in university (graduating 2024).
 * Full-stack, but interest lies mainly in back-end.
-* Currently studying **ASP.NET** and **React**.
+* Looking into **ASP.NET** and **React**.
 * [Here](https://nandgame.com/) are [some](https://userinyerface.com/game.html) cool [links](http://wiki.c2.com/?LanguageSmell) to [cl](https://refactoring.guru/design-patterns/catalog)[li](https://learnxinyminutes.com/)[ck](https://www.redblobgames.com/) on.
 
 ### Some tech I've used:
