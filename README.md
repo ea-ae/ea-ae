@@ -1,9 +1,8 @@
 ## / iam *| ea-ae |* hello \
 
-* Coding since 14, now 20 and studying SWE in university (graduating 2024).
-* Currently learning more about **ASP.NET** and **SQL**.
-* Full-stack, but interest lies mainly in back-end development.
-* Favorite language combo's **Python/C++**.
+* Currently studying software engineering in university (graduating 2024).
+* Full-stack, but interest lies mainly in back-end.
+* Currently studying **ASP.NET** and **React**.
 * [Here](https://nandgame.com/) are [some](https://userinyerface.com/game.html) cool [links](http://wiki.c2.com/?LanguageSmell) to [cl](https://refactoring.guru/design-patterns/catalog)[li](https://learnxinyminutes.com/)[ck](https://www.redblobgames.com/) on.
 
 ### Some tech I've used:
@@ -27,5 +26,5 @@
 <br>
 
 <div>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ea-ae&theme=monokai&update=1"><img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ea-ae&theme=monokai&update=1"><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ea-ae&theme=monokai&update=1">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ea-ae&theme=monokai"><img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ea-ae&theme=monokai"><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ea-ae&theme=monokai">
 </div>
