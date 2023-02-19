@@ -1,0 +1,99 @@
+{
+    // editor
+
+    "editor.lightbulb.enabled":"off",
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    
+    // vim-specific editor settings
+    
+    "editor.lineNumbers": "relative",
+    "editor.cursorSurroundingLines": 100,
+
+    // vscode vim
+
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "~/.vimrc",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.leader": "<space>",
+
+    // nerdtree shortcut delegation
+
+    "vim.handleKeys": {
+        "<C-n>": false,
+    },
+
+    // rust
+
+    "rust-analyzer.lens.enable": false,
+    "rust-analyzer.check.command": "clippy",
+    "rust-analyzer.checkOnSave": true,
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    },
+
+    // formatting
+
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnPaste": false, // required 
+    "editor.formatOnType": false, // required
+    "editor.formatOnSave": true, // optional 
+    "editor.formatOnSaveMode": "file", // optional but recommended
+
+    // language-specific
+
+    "[vue]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    
+    // etc
+
+    "editor.fontLigatures": false,
+    "editor.minimap.enabled": false,
+    "github.copilot.advanced": {},
+    "dotnet.codeLens.enableReferencesCodeLens": false,
+    "workbench.colorTheme": "Monokai vs pro next",
+    "dotnet.unitTestDebuggingOptions": {},
+    "files.eol": "\n",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": true,
+        "markdown": false,
+        "scminput": false
+    },
+    "html.format.wrapLineLength": 250,
+    "vue.updateImportsOnFileMove.enabled": true,
+    "vue.inlayHints.missingProps": true,
+    "omnisharp.organizeImportsOnFormat": true,
+    "editor.codeActionWidget.includeNearbyQuickFixes": true,
+    "eslint.format.enable": true,
+    "vue.codeLens.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "errorLens.delay": 1000,
+    "window.zoomLevel": -1,
+    "editor.wordWrap": "on",
+    "workbench.editor.enablePreview": false,
+    "editor.renderWhitespace": "none",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "git.openRepositoryInParentFolders": "always",
+    "workbench.editorAssociations": {
+        "*.pdf": "latex-workshop-pdf-hook"
+    },
+    "github.copilot.editor.enableAutoCompletions": true,
+    "gitlens.mode.active": "zen",
+    "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
+    "rust-analyzer.completion.callable.snippets": "none",
+    "editor.bracketPairColorization.enabled": false,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    }
+}

@@ -1,0 +1,77 @@
+[
+  // vim
+  
+  {
+    "key": "ctrl+i ctrl+m",
+    "command": "toggleVim"
+  },
+  
+  // terminal
+  
+  {
+    "key": "ctrl+shift+a",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  
+  // file tree
+  
+  {
+    "command": "workbench.action.toggleSidebarVisibility",
+    "key": "ctrl+e"
+  },
+  {
+    "command": "workbench.files.action.focusFilesExplorer",
+    "key": "ctrl+e",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "renameFile",
+    "key": "r",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "explorer.newfolder",
+    "when": "explorerviewletfocus"
+  },
+  {
+    "command": "deleteFile",
+    "key": "d",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-workbench.action.showAllSymbols"
+  },
+
+  // other
+
+  {
+    "command": "workbench.action.toggleZenMode",
+    "key": "ctrl+i ctrl+z"
+  },
+  {
+    "key": "ctrl+t ctrl+o",
+    "command": "workbench.panel.testResults.view.focus"
+  }
+]

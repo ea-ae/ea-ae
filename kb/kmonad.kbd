@@ -1,0 +1,51 @@
+(defcfg
+  fallthrough true
+
+  ;; windows
+  ;; input  (low-level-hook)
+  ;; output (send-event-sink)
+)
+
+#| --------------------------------------------------------------------------
+(deflayer name
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _              _              _    _    _    _
+)
+  -------------------------------------------------------------------------- |#
+
+(defsrc
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rmet cmp  rctl
+)
+
+(defalias ;; layers
+  mod_util (layer-toggle util)
+)
+
+(defalias ;; shortcuts
+  lu  (tap-next-release esc @mod_util)
+  cup C-pgup
+  cdn C-pgdn
+)
+
+(deflayer qwerty
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  @lu  _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _              _              _    _    _    _
+)
+
+(deflayer util
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    esc  _    _    _    _    _    _    _    _    _    ü    õ    _
+  _    @cup @cdn _    _    _    left down up   rght ö    ä    _
+  _    _    _    caps _    _    _    _    _    _    _    _
+  _    _    _              _              _    _    _    _
+)

@@ -1,0 +1,39 @@
+[core]
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only
+[alias]
+	cmp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
+	# pulls a branch and updates it without having to checkout
+	fp = "!f() { git fetch origin $1:$1 }; f"
+	gud = reset
+	c = commit
+	ac = "!f() { git add -A && git commit -m \"$@\"; }; f"
+	ca = commit --amend --no-edit
+	aca = "!f() { git add -A && git commit --amend --no-edit; }; f"
+	co = checkout
+	sw = switch
+	f = "!f() { git branch | fzf | xargs git checkout; }; f"
+	s = status
+	a = add
+	br = branch
+	sl = log --oneline
+	bl = log --oneline --graph --all
+	b = "!f() { git reflog | grep checkout | cut -d \" \" -f 8 | uniq | head -n ${1:-10} | cat -n; }; f"
+	bgo = "!f() { git b ${1} | tail -1 | cut -f 2 | xargs git checkout; }; f"
+	bb = "!f() { git for-each-ref --sort=committerdate refs/ --color=always --format=\"%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))\" | tail -n ${1:-10} | tac; }; f"
+	bbl = "!f() { git for-each-ref --sort=committerdate refs/heads/ --color=always --format=\"%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))\" | tail -n ${1:-10} | tac; }; f"
+	bbr = "!f() { git for-each-ref --sort=committerdate refs/remotes/ --color=always --format=\"%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))\" | tail -n ${1:-10} | tac; }; f"
+	quick-stats = ! ~/git-quick-stats/git-quick-stats
+	# xbb = "!f() { refbranch=$1 count=$2; git for-each-ref --sort=-committerdate refs/heads --format='%(refname:short)|%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)' --color=always --count=${count:-20} | while read line; do branch=$(echo \"$line\" | awk 'BEGIN { FS = \"|\" }; { print $1 }' | tr -d '*'); ahead=$(git rev-list --count \"${refbranch:-origin/master}..${branch}\"); behind=$(git rev-list --count \"${branch}..${refbranch:-origin/master}\"); colorline=$(echo \"$line\" | sed 's/^[^|]*|//'); echo \"$ahead|$behind|$colorline\" | awk -F'|' -vOFS='|' '{$5=substr($5,1,70)}1' ; done | ( echo \"ahead|behind||branch|lastcommit|message|author\\n\" && cat) | column -ts'|';}; f"
+[diff]
+        colorMoved = default
+[delta]
+	navigate = true
+	side-by-side = true
+	light = false
+[credential]
+	helper = store
+[merge]
+	conflictstyle = diff3
+	ff = false
