@@ -1,6 +1,7 @@
 ## / iam *| ea-ae |* hello \
 
 * Studying software engineering in university.
+* First started coding at 13, and still going strong.
 * Full-stack webdev, interest lies mostly in back-end development.
 * Currently occupied with **ASP.NET**, **machine learning**, and **React**.
 
