@@ -1,7 +1,7 @@
 ## / iam *| ea-ae |* hello \
 
 * Studying software engineering in university.
-* First started coding at 13.
+* Coding since 13, still can't remember how to get the size of a list.
 * Full-stack webdev, interest lies mostly in back-end development.
 * Currently occupied with **ASP.NET**, **machine learning**, and **React**.
 
@@ -16,5 +16,5 @@
 <!-- <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ea-ae&theme=monokai"> -->
 
 <div>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ea-ae&theme=monokai"><!--<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ea-ae&theme=monokai">-->
+<!--<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ea-ae&theme=monokai">--><!--<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ea-ae&theme=monokai">-->
 </div>
