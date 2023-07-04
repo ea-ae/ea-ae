@@ -1,12 +1,17 @@
-alias.cmp=!f() { git add -A && git commit -m "$@" && git push; }; f
-alias.gud=reset
-alias.c=commit
-alias.ac=!f() { git add -A && git commit -m "$@"; }; f
-alias.ca=commit --amend --no-edit
-alias.aca=!f() { git add -A && git commit --amend --no-edit; }; f
-alias.co=checkout
-alias.s=status
-alias.a=add
-alias.sl=log --oneline
-alias.bl=log --oneline --graph --all
-merge.conflictstyle=diff3
+[alias]
+	tpush = "!f() { git add -A && git commit -m \"${@:2}\" && git tag -f $1 && git push && git push origin -f $1; }; f"
+	cmp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
+	gud = reset
+	c = commit
+	ac = "!f() { git add -A && git commit -m \"$@\"; }; f"
+	ca = commit --amend --no-edit
+	aca = "!f() { git add -A && git commit --amend --no-edit; }; f"
+	co = checkout
+	s = status
+	a = add
+	sl = log --oneline
+	bl = log --oneline --graph --all
+[credential]
+	helper = store
+[merge]
+	conflictstyle = diff3
