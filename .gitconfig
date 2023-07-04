@@ -1,0 +1,12 @@
+alias.cmp=!f() { git add -A && git commit -m "$@" && git push; }; f
+alias.gud=reset
+alias.c=commit
+alias.ac=!f() { git add -A && git commit -m "$@"; }; f
+alias.ca=commit --amend --no-edit
+alias.aca=!f() { git add -A && git commit --amend --no-edit; }; f
+alias.co=checkout
+alias.s=status
+alias.a=add
+alias.sl=log --oneline
+alias.bl=log --oneline --graph --all
+merge.conflictstyle=diff3
