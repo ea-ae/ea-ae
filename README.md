@@ -1,9 +1,9 @@
 ## / iam *| ea-ae |* hello \
 
 * Studying software engineering in university.
-* Coding since 13, still can't remember how to get the size of a list.
-* Full-stack webdev, interest lies mostly in back-end development.
-* Currently occupied with **ASP.NET**, **machine learning**, and **React**.
+* Coding since 13, still can't remember how to get the length of a list.
+* Full-stack webdev with a focus on back-end development.
+* Currently interested in **ASP.NET**, **distributed systems**, and **Vue**.
 
 ### Tech I use:
 
