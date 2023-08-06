@@ -1,5 +1,11 @@
+[user]
+        name = ae
+        email = 90932525+ea-ae@users.noreply.github.com
+[core]
+        pager = delta
+[interactive]
+        diffFilter = delta --color-only
 [alias]
-	tpush = "!f() { git add -A && git commit -m \"${@:2}\" && git tag -f $1 && git push && git push origin -f $1; }; f"
 	cmp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
 	gud = reset
 	c = commit
@@ -11,6 +17,12 @@
 	a = add
 	sl = log --oneline
 	bl = log --oneline --graph --all
+[diff]
+        colorMoved = default
+[delta]
+        navigate = true
+        side-by-side = true
+        light = false
 [credential]
 	helper = store
 [merge]
