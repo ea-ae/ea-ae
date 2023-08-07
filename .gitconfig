@@ -17,6 +17,8 @@
 	a = add
 	sl = log --oneline
 	bl = log --oneline --graph --all
+	b = "!f() { git reflog | grep checkout | cut -d \" \" -f 8 | uniq | head -n ${1:-10} | cat -n; }; f"
+	bb = "!f() { git for-each-ref --sort=committerdate refs/heads/ --color=always --format=\"%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))\" | tail -n ${1:-10} | tac; }; f"
 [diff]
         colorMoved = default
 [delta]
