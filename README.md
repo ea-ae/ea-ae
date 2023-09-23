@@ -1,9 +1,9 @@
 ## / iam *| ea-ae |* hello \
 
-* Studying software engineering in university.
+* Studying software engineering in university
 * Wrote first code at 13 in C++
-* Full-stack webdev with a focus on back-end development.
-* Currently interested in **ASP.NET**, **distributed systems**, and **Vue**.
+* Full-stack webdev with a focus on back-end development
+* Currently interested in **ASP.NET**, **distributed systems**, and **Vue**
 
 ### Tech I use:
 
