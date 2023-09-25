@@ -6,8 +6,9 @@
 [interactive]
         diffFilter = delta --color-only
 [alias]
-	cmp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
 	gud = reset
+	yoink = cherrypick
+	cmp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
 	c = commit
 	ac = "!f() { git add -A && git commit -m \"$@\"; }; f"
 	ca = commit --amend --no-edit
