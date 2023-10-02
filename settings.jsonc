@@ -1,35 +1,18 @@
 {
-  // general
   "editor.lineNumbers": "relative",
   "editor.inlayHints.enabled": "off",
   "breadcrumbs.enabled": false,
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "~/.vimrc",
 
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
-  // "vim.leader": "<space>",
+  "vim.leader": "<space>",
 
   // vim normal mode
 
   "vim.normalModeKeyBindingsNonRecursive": [
-    // tab navigation
-
-    { "before": ["<S-j>"], "commands": [":bprevious"] },
-    { "before": ["<S-k>"], "commands": [":bnext"] },
-
-    // file modification
-
-    { "before": ["leader", "w"], "commands": [":w!"] },
-    { "before": ["leader", "q"], "commands": [":q!"] },
-    { "before": ["leader", "x"], "commands": [":x!"] },
-
-    // file navigation
-
-    // { "before": ["<C-d>"], "after": ["<C-d>zz"] },
-    // { "before": ["<C-u>"], "after": ["<C-u>zz"] },
-
-    // vscode
-
     {
       "before": ["<leader>", "c", "a"],
       "commands": ["editor.action.quickFix"]
@@ -153,5 +136,5 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.windows": "Git Bash"
 }
