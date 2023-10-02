@@ -1,14 +1,15 @@
+# This is Git's per-user configuration file.
 [user]
-        name = ae
-        email = 90932525+ea-ae@users.noreply.github.com
+	name = ae
+	email = 90932525+ea-ae@users.noreply.github.com
 [core]
-        pager = delta
+	pager = delta
 [interactive]
-        diffFilter = delta --color-only
+	diffFilter = delta --color-only
 [alias]
-	gud = reset
-	yoink = cherrypick
+	tpush = "!f() { git add -A && git commit -m \"${@:2}\" && git tag -f $1 && git push && git push origin -f $1; }; f"
 	cmp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
+	gud = reset
 	c = commit
 	ac = "!f() { git add -A && git commit -m \"$@\"; }; f"
 	ca = commit --amend --no-edit
@@ -24,13 +25,15 @@
 	bbl = "!f() { git for-each-ref --sort=committerdate refs/heads/ --color=always --format=\"%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))\" | tail -n ${1:-10} | tac; }; f"
 	bbr = "!f() { git for-each-ref --sort=committerdate refs/remotes/ --color=always --format=\"%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))\" | tail -n ${1:-10} | tac; }; f"
 [diff]
-        colorMoved = default
+	colorMoved = default
 [delta]
-        navigate = true
-        side-by-side = true
-        light = false
+	navigate = true
+	side-by-side = true
+	light = false
 [credential]
 	helper = store
 [merge]
 	conflictstyle = diff3
 	ff = false
+[credential "bitbucket.com"]
+	useHttpPath = true
