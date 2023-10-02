@@ -55,11 +55,6 @@
     "command": "explorer.newFolder",
     "when": "explorerViewletFocus"
   },
-  // {
-  //   "key": "shift+n",
-  //   "command": "workbench.action.newWindow",
-  //   "when": "!explorerViewletFocus"
-  // },
   {
     "command": "deleteFile",
     "key": "d",
