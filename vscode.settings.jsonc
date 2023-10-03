@@ -1,4 +1,5 @@
 {
+  "editor.cursorSurroundingLines": 100,
   "editor.lineNumbers": "relative",
   "editor.inlayHints.enabled": "off",
   "breadcrumbs.enabled": false,
@@ -129,7 +130,7 @@
   "volar.format.initialIndent": {
     "html": true
   },
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "editor.formatOnSave": true,
   "window.zoomLevel": -1,
   "redhat.telemetry.enabled": true,

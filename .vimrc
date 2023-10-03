@@ -4,8 +4,6 @@
 
 let mapleader = " "
 
-" View
-
 :set scrolloff=999
 :set number
 :set relativenumber
@@ -13,6 +11,8 @@ let mapleader = " "
 " Navigation
 
 map <Leader> <Plug>(easymotion-prefix)
+map  <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
 
 nnoremap <S-h> :bprevious<CR>
 nnoremap <S-l> :bnext<CR>
