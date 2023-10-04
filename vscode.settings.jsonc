@@ -88,6 +88,9 @@
       "before": [
         "leader",
         "u"
+      ],
+      "commands": [
+        "editor.action.goToReferences"
       ]
     }
   ],
