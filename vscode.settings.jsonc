@@ -1,157 +1,176 @@
 {
   "editor.cursorSurroundingLines": 100,
-  "editor.lineNumbers": "relative",
-  "editor.inlayHints.enabled": "off",
-  "breadcrumbs.enabled": false,
-  "vim.vimrc.enable": true,
-  "vim.vimrc.path": "~/.vimrc",
-  "vim.easymotion": true,
-  "vim.incsearch": true,
-  "vim.useSystemClipboard": true,
-  "vim.leader": "<space>",
-  // vim normal mode
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "<leader>",
-        "c",
-        "a"
-      ],
-      "commands": [
-        "editor.action.quickFix"
-      ]
+    "editor.lineNumbers": "relative",
+    "editor.inlayHints.enabled": "off",
+    "breadcrumbs.enabled": false,
+
+    // neovim
+
+    // "vscode-neovim.neovimExecutablePaths.win32": "C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe",
+    // "vscode-neovim.neovimInitVimPaths.win32": "C:\\users\\ThomasVäärtnõu\\.config\\nvim\\init.vim",
+
+    // "extensions.experimental.affinity": {
+    //     "asvetliakov.vscode-neovim": 1
+    // },
+
+    // nerdtree shortcut delegation
+
+    "vim.handleKeys": {
+        "<C-n>": false,
     },
-    {
-      "before": [
-        "leader",
-        "f"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "p"
-      ],
-      "commands": [
-        "editor.action.formatDocument"
-      ]
-    },
-    {
-      "before": [
-        "g",
-        "h"
-      ],
-      "commands": [
-        "editor.action.showDefinitionPreviewHover"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "x"
-      ],
-      "commands": [
-        "editor.action.marker.nextInFiles"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "z"
-      ],
-      "commands": [
-        "editor.actions.marker.prevInFiles"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "d"
-      ],
-      "commands": [
-        "editor.action.goToTypeDefinition"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "i"
-      ],
-      "commands": [
-        "editor.action.goToImplementation"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "u"
-      ],
-      "commands": [
-        "editor.action.goToReferences"
-      ]
-    }
-  ],
-  // vim insert mode
-  "vim.insertModeKeyBindings": [],
-  // vim visual mode
-  "vim.visualModeKeyBindings": [
-    // Stay in visual mode while indenting
-    {
-      "before": [
-        "<"
-      ],
-      "commands": [
-        "editor.action.outdentLines"
-      ]
-    },
-    {
-      "before": [
-        ">"
-      ],
-      "commands": [
-        "editor.action.indentLines"
-      ]
-    },
-    // Move selected lines while staying in visual mode
-    {
-      "before": [
-        "J"
-      ],
-      "commands": [
-        "editor.action.moveLinesDownAction"
-      ]
-    },
-    {
-      "before": [
-        "K"
-      ],
-      "commands": [
-        "editor.action.moveLinesUpAction"
-      ]
-    },
-    // toggle comment selection
-    {
-      "before": [
-        "leader",
-        "c"
-      ],
-      "commands": [
-        "editor.action.commentLine"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "<S-c>"
-      ],
-      "commands": [
-        "editor.action.blockComment"
-      ]
-    }
-  ],
+    
+    // vscode vim
+
+        "vim.vimrc.enable": true,
+        "vim.vimrc.path": "~/.vimrc",
+        "vim.easymotion": true,
+        "vim.incsearch": true,
+        "vim.useSystemClipboard": true,
+        "vim.leader": "<space>",
+        // vim normal mode
+        "vim.normalModeKeyBindingsNonRecursive": [
+            {
+                "before": [
+                    "<leader>",
+                    "c",
+                    "a"
+                ],
+                "commands": [
+                    "editor.action.quickFix"
+                ]
+            },
+            {
+                "before": [
+                    "leader",
+                    "f"
+                ],
+                "commands": [
+                    "workbench.action.quickOpen"
+                ]
+            },
+            {
+                "before": [
+                    "leader",
+                    "p"
+                ],
+                "commands": [
+                    "editor.action.formatDocument"
+                ]
+            },
+            {
+                "before": [
+                    "g",
+                    "h"
+                ],
+                "commands": [
+                    "editor.action.showDefinitionPreviewHover"
+                ]
+            },
+            {
+                "before": [
+                    "leader",
+                    "x"
+                ],
+                "commands": [
+                    "editor.action.marker.nextInFiles"
+                ]
+            },
+            {
+                "before": [
+                    "leader",
+                    "z"
+                ],
+                "commands": [
+                    "editor.actions.marker.prevInFiles"
+                ]
+            },
+            {
+                "before": [
+                    "leader",
+                    "d"
+                ],
+                "commands": [
+                    "editor.action.goToTypeDefinition"
+                ]
+            },
+            {
+                "before": [
+                    "leader",
+                    "i"
+                ],
+                "commands": [
+                    "editor.action.goToImplementation"
+                ]
+            },
+            {
+                "before": [
+                    "leader",
+                    "u"
+                ],
+                "commands": [
+                    "editor.action.goToReferences"
+                ]
+            }
+        ],
+        // vim insert mode
+        "vim.insertModeKeyBindings": [],
+        // vim visual mode
+        "vim.visualModeKeyBindings": [
+            // Stay in visual mode while indenting
+            {
+                "before": [
+                    "<"
+                ],
+                "commands": [
+                    "editor.action.outdentLines"
+                ]
+            },
+            {
+                "before": [
+                    ">"
+                ],
+                "commands": [
+                    "editor.action.indentLines"
+                ]
+            },
+            // Move selected lines while staying in visual mode
+            {
+                "before": [
+                    "J"
+                ],
+                "commands": [
+                    "editor.action.moveLinesDownAction"
+                ]
+            },
+            {
+                "before": [
+                    "K"
+                ],
+                "commands": [
+                    "editor.action.moveLinesUpAction"
+                ]
+            },
+            // toggle comment selection
+            {
+                "before": [
+                    "leader",
+                    "c"
+                ],
+                "commands": [
+                    "editor.action.commentLine"
+                ]
+            },
+            {
+                "before": [
+                    "leader",
+                    "<S-c>"
+                ],
+                "commands": [
+                    "editor.action.blockComment"
+                ]
+            }
+    ],
+    
   // etc
   "workbench.colorTheme": "Default Dark+",
   "editor.unicodeHighlight.nonBasicASCII": false,
