@@ -15,6 +15,8 @@
 	ca = commit --amend --no-edit
 	aca = "!f() { git add -A && git commit --amend --no-edit; }; f"
 	co = checkout
+	sw = switch
+	cg = "!f() { git branch | grep $@ | xargs git switch; }; f"
 	s = status
 	a = add
 	sl = log --oneline
