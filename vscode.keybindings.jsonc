@@ -1,16 +1,17 @@
 // Place your key bindings in this file to override the defaults
 [
+  
   // vim
-
+  
   {
     "key": "ctrl+i ctrl+m",
     "command": "toggleVim"
   },
-
+  
   // terminal
-
+  
   {
-    "key": "ctrl+shift+a",
+  "key": "ctrl+shift+a",
     "command": "workbench.action.togglePanel"
   },
   {
@@ -28,9 +29,9 @@
     "command": "workbench.action.terminal.new",
     "when": "terminalFocus"
   },
-
+  
   // file tree
-
+  
   {
     "command": "workbench.action.toggleSidebarVisibility",
     "key": "ctrl+e"
@@ -51,15 +52,10 @@
     "when": "filesExplorerFocus && !inputFocus"
   },
   {
-    "key": "shift+n",
-    "command": "explorer.newFolder",
-    "when": "explorerViewletFocus"
+    "key": "ctrl+shift+n",
+    "command": "explorer.newfolder",
+    "when": "explorerviewletfocus"
   },
-  // {
-  //   "key": "shift+n",
-  //   "command": "workbench.action.newWindow",
-  //   "when": "!explorerViewletFocus"
-  // },
   {
     "command": "deleteFile",
     "key": "d",
@@ -75,5 +71,56 @@
   {
     "command": "workbench.action.toggleZenMode",
     "key": "ctrl+i ctrl+z"
-  }
+  },
+  {
+    "key": "ctrl+t ctrl+o",
+    "command": "workbench.panel.testResults.view.focus"
+  },
+
+  // neovim fix
+
+  // {
+  //     "key": "ctrl+d",
+  //     "command": "-vscode-neovim.ctrl-d",
+  //     "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
+  // },
+  // {
+  //     "key": "ctrl+u",
+  //     "command": "-vscode-neovim.ctrl-u",
+  //     "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
+  // },
+  // {
+  //     "key": "ctrl+f",
+  //     "command": "-vscode-neovim.ctrl-f",
+  //     "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
+  // },
+  // {
+  //     "key": "ctrl+b",
+  //     "command": "-vscode-neovim.ctrl-b",
+  //     "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
+  // },
+  // {
+  //     "command": "vscode-neovim.send",
+  //     "key": "ctrl+d",
+  //     "when": "editorTextFocus && neovim.init && neovim.mode != insert || neovim.recording",
+  //     "args": "<C-D>"
+  // },
+  // {
+  //     "command": "vscode-neovim.send",
+  //     "key": "ctrl+u",
+  //     "when": "editorTextFocus && neovim.init && neovim.mode != insert || neovim.recording",
+  //     "args": "<C-U>"
+  // },
+  // {
+  //     "command": "vscode-neovim.send",
+  //     "key": "ctrl+f",
+  //     "when": "editorTextFocus && neovim.init && neovim.mode != insert || neovim.recording",
+  //     "args": "<C-F>"
+  // },
+  // {
+  //     "command": "vscode-neovim.send",
+  //     "key": "ctrl+b",
+  //     "when": "editorTextFocus && neovim.init && neovim.mode != insert || neovim.recording",
+  //     "args": "<C-B>"
+  // },
 ]

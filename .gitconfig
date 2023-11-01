@@ -1,13 +1,11 @@
-# This is Git's per-user configuration file.
 [user]
-	name = ae
-	email = 90932525+ea-ae@users.noreply.github.com
+	name = Thomas Väärtnõu
+	email = thomas.vaartnou@agileworks.eu
 [core]
 	pager = delta
 [interactive]
 	diffFilter = delta --color-only
 [alias]
-	tpush = "!f() { git add -A && git commit -m \"${@:2}\" && git tag -f $1 && git push && git push origin -f $1; }; f"
 	cmp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
 	gud = reset
 	c = commit
@@ -16,9 +14,10 @@
 	aca = "!f() { git add -A && git commit --amend --no-edit; }; f"
 	co = checkout
 	sw = switch
-	cg = "!f() { git branch | grep $@ | xargs git switch; }; f"
+	f = "!f() { git branch | fzf | xargs git checkout; }; f"
 	s = status
 	a = add
+	br = branch
 	sl = log --oneline
 	bl = log --oneline --graph --all
 	b = "!f() { git reflog | grep checkout | cut -d \" \" -f 8 | uniq | head -n ${1:-10} | cat -n; }; f"
@@ -26,8 +25,9 @@
 	bb = "!f() { git for-each-ref --sort=committerdate refs/ --color=always --format=\"%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))\" | tail -n ${1:-10} | tac; }; f"
 	bbl = "!f() { git for-each-ref --sort=committerdate refs/heads/ --color=always --format=\"%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))\" | tail -n ${1:-10} | tac; }; f"
 	bbr = "!f() { git for-each-ref --sort=committerdate refs/remotes/ --color=always --format=\"%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))\" | tail -n ${1:-10} | tac; }; f"
+	# xbb = "!f() { refbranch=$1 count=$2; git for-each-ref --sort=-committerdate refs/heads --format='%(refname:short)|%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)' --color=always --count=${count:-20} | while read line; do branch=$(echo \"$line\" | awk 'BEGIN { FS = \"|\" }; { print $1 }' | tr -d '*'); ahead=$(git rev-list --count \"${refbranch:-origin/master}..${branch}\"); behind=$(git rev-list --count \"${branch}..${refbranch:-origin/master}\"); colorline=$(echo \"$line\" | sed 's/^[^|]*|//'); echo \"$ahead|$behind|$colorline\" | awk -F'|' -vOFS='|' '{$5=substr($5,1,70)}1' ; done | ( echo \"ahead|behind||branch|lastcommit|message|author\\n\" && cat) | column -ts'|';}; f"
 [diff]
-	colorMoved = default
+        colorMoved = default
 [delta]
 	navigate = true
 	side-by-side = true
@@ -37,5 +37,3 @@
 [merge]
 	conflictstyle = diff3
 	ff = false
-[credential "bitbucket.com"]
-	useHttpPath = true
