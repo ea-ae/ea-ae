@@ -45,10 +45,10 @@ caps := 0
     ; return
 
     ; media control
-    $*F5::Send, {Blind}{Media_Stop}
-    $*F6::Send, {Blind}{Media_Play_Pause}
-    $*F7::Send, {Blind}{Media_Prev}
-    $*F8::Send, {Blind}{Media_Next}
+    ;$*F5::Send, {Blind}{Media_Stop}
+    ;$*F6::Send, {Blind}{Media_Play_Pause}
+    ;$*F7::Send, {Blind}{Media_Prev}
+    ;$*F8::Send, {Blind}{Media_Next}
 
     $*i::Send, {Blind}{Insert}
     $*d::Send, {Blind}{Del}
@@ -58,27 +58,28 @@ caps := 0
     $*w::Send, {Blind}{PgDn}
     $*e::Send, {Blind}{PgUp}
     $*p::Send, {Blind}{PrintScreen}
+    
+    ; estonian letter ü
+    $*[::Send, {Blind}{U+00FC}
+    $*+[::Send, {Blind}{U+00DC}
 
-    ; caps + x closes a window through ctrl+f4
+    ; estonian letter õ
+    $*]::Send, {Blind}{U+00F5}
+    $*+]::Send, {Blind}{U+00D5}
+
+    ; estonian letter ä
+    $*'::Send, {Blind}{U+00E4}
+    $"::Send, {Blind}{U+00C4}
+
+    ; estonian letter ö
+    $*;::Send, {Blind}{U+00F6}
+    $*+;::Send, {Blind}{U+00D6}
+    ; caps + x closes a window/tab
     $*x::Send, ^{F4}
 
-    ; browser
+    ; tab navigation (browser/IDE)
     $*a::Send, ^{PgUp}
     $*s::Send, ^{PgDn}
-
-    ; show expose (requires switcher)
-    $*Tab::Send, #{Tab}
-
-    ; resize windows (requires winsplit revolution)
-    $*1::Send, ^!{NumPad1}
-    $*2::Send, ^!{NumPad2}
-    $*3::Send, ^!{NumPad3}
-    $*4::Send, ^!{NumPad4}
-    $*5::Send, ^!{NumPad5}
-    $*6::Send, ^!{NumPad6}
-    $*7::Send, ^!{NumPad7}
-    $*8::Send, ^!{NumPad8}
-    $*9::Send, ^!{NumPad9}
 
     ; vi hjkl navigation
     $*h::Send, {Blind}{Left}
