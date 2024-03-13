@@ -7,6 +7,8 @@
 	diffFilter = delta --color-only
 [alias]
 	cmp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
+	# pulls a branch and updates it without having to checkout
+	fp = "!f() { git fetch origin $1:$1 }; f"
 	gud = reset
 	c = commit
 	ac = "!f() { git add -A && git commit -m \"$@\"; }; f"
