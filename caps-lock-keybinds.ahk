@@ -74,6 +74,7 @@ caps := 0
     ; estonian letter ö
     $*;::Send, {Blind}{U+00F6}
     $*+;::Send, {Blind}{U+00D6}
+    
     ; caps + x closes a window/tab
     $*x::Send, ^{F4}
 
