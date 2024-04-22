@@ -37,13 +37,13 @@ caps := 0
     $*F1::fallback_prevention := !fallback_prevention
     
     ; toggle Capslock
-    ; $*F2::
-    ;   if GetKeyState("Capslock", "T") = 0
-    ;     SetCapsLockState, On
-    ;   else
-    ;     SetCapsLockState, AlwaysOff
-    ; return
-
+    $*F2::
+      if GetKeyState("Capslock", "T") = 0
+        SetCapsLockState, On
+      else
+        SetCapsLockState, AlwaysOff
+    return
+  
     ; media control
     ;$*F5::Send, {Blind}{Media_Stop}
     ;$*F6::Send, {Blind}{Media_Play_Pause}
@@ -57,7 +57,6 @@ caps := 0
     $*o::Send, {Blind}{End}
     $*w::Send, {Blind}{PgDn}
     $*e::Send, {Blind}{PgUp}
-    $*p::Send, {Blind}{PrintScreen}
     
     ; estonian letter ü
     $*[::Send, {Blind}{U+00FC}
@@ -74,7 +73,6 @@ caps := 0
     ; estonian letter ö
     $*;::Send, {Blind}{U+00F6}
     $*+;::Send, {Blind}{U+00D6}
-    
     ; caps + x closes a window/tab
     $*x::Send, ^{F4}
 
