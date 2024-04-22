@@ -42,6 +42,10 @@ xnoremap <leader>d "_d
 nnoremap <leader>p "_dP
 xnoremap <leader>p "_dP
 
+" Registers
+
+nnoremap <Leader>s :let @x=@" \| let @"=@a \| let @a=@b \| let @b=@x \| reg "ab<CR>
+
 " Search
 
 :set incsearch
@@ -50,9 +54,9 @@ xnoremap <leader>p "_dP
 
 " Regex very magic mode
 
-nnoremap / /\v
-vnoremap / /\v
-cnoremap %s/ %smagic/
-cnoremap \>s/ \>smagic/
-nnoremap :g/ :g/\v
-nnoremap :g// :g//
+" nnoremap / /\v
+" vnoremap / /\v
+" cnoremap %s/ %smagic/
+" cnoremap \>s/ \>smagic/
+" nnoremap :g/ :g/\v
+" nnoremap :g// :g//

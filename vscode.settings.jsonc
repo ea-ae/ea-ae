@@ -22,6 +22,16 @@
     "vim.leader": "<space>",
     // vim normal mode
     "vim.normalModeKeyBindingsNonRecursive": [
+        // soft wrap j/k navigation
+        {
+            "before": ["j"],
+            "after": ["g", "j"]
+        },
+        {
+            "before": ["k"],
+            "after": ["g", "k"]
+        },
+
         {
             "before": [
                 "<leader>",
@@ -174,17 +184,22 @@
         }
     ],
     // formatting & linting
-    "editor.formatOnSave": false,
-    "editor.formatOnType": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "javascript.updateImportsOnFileMove.enabled": "always",
+    // "editor.formatOnSave": false,
+    // "editor.formatOnType": true,
+    // "editor.codeActionsOnSave": {
+    //     "source.fixAll.eslint": true
+    // },
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnPaste": false, // required 
+    "editor.formatOnType": false, // required
+    "editor.formatOnSave": true, // optional 
+    "editor.formatOnSaveMode": "file", // optional but recommended
     // etc
     "editor.fontLigatures": false,
     "editor.minimap.enabled": false,
-    "github.copilot.advanced": {},
+    "github.copilot.advanced": {
+    
+    },
     "dotnet.codeLens.enableReferencesCodeLens": false,
     "workbench.colorTheme": "After Dark",
     "csharp.experimental.debug.hotReload": true,
@@ -196,11 +211,32 @@
         "markdown": false,
         "scminput": false
     },
-    "editor.codeActionWidget.includeNearbyQuickfixes": true,
     "html.format.wrapLineLength": 250,
     "vue.updateImportsOnFileMove.enabled": true,
     "vue.inlayHints.missingProps": true,
     "vue.server.fullCompletionList": true,
     "omnisharp.organizeImportsOnFormat": true,
+    "editor.codeActionWidget.includeNearbyQuickFixes": true,
+    "[vue]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "eslint.format.enable": true,
+    "vue.codeLens.enabled": false,
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "gitlens.plusFeatures.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "inlineChat.showGutterIcon": true,
+    "errorLens.delay": 1000,
     "window.zoomLevel": -1,
+    "editor.wordWrap": "on",
+    "workbench.editor.enablePreview": false,
+    "editor.renderWhitespace": "none",
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
 }
