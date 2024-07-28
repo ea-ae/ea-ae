@@ -1,208 +1,51 @@
 {
-    "editor.cursorSurroundingLines": 100,
-    "editor.lineNumbers": "relative",
+    // editor
+
+    "editor.lightbulb.enabled":"off",
     "editor.inlayHints.enabled": "off",
-    "breadcrumbs.enabled": false,
-    // neovim
-    // "vscode-neovim.neovimExecutablePaths.win32": "C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe",
-    // "vscode-neovim.neovimInitVimPaths.win32": "C:\\users\\ThomasVäärtnõu\\.config\\nvim\\init.vim",
-    // "extensions.experimental.affinity": {
-    //     "asvetliakov.vscode-neovim": 1
-    // },
-    // nerdtree shortcut delegation
-    "vim.handleKeys": {
-        "<C-n>": false,
-    },
+    
+    // vim-specific editor settings
+    
+    "editor.lineNumbers": "relative",
+    "editor.cursorSurroundingLines": 100,
+
     // vscode vim
+
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "~/.vimrc",
     "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
     "vim.leader": "<space>",
-    // vim normal mode
-    "vim.normalModeKeyBindingsNonRecursive": [
-        // soft wrap j/k navigation
-        {
-            "before": ["j"],
-            "after": ["g", "j"]
-        },
-        {
-            "before": ["k"],
-            "after": ["g", "k"]
-        },
 
-        {
-            "before": [
-                "<leader>",
-                "c",
-                "a"
-            ],
-            "commands": [
-                "editor.action.quickFix"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "f"
-            ],
-            "commands": [
-                "workbench.action.quickOpen"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "p"
-            ],
-            "commands": [
-                "editor.action.formatDocument"
-            ]
-        },
-        {
-            "before": [
-                "g",
-                "h"
-            ],
-            "commands": [
-                "editor.action.showDefinitionPreviewHover"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "x"
-            ],
-            "commands": [
-                "editor.action.marker.nextInFiles"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "z"
-            ],
-            "commands": [
-                "editor.actions.marker.prevInFiles"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "g"
-            ],
-            "commands": [
-                "editor.action.revealDefinition"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "i"
-            ],
-            "commands": [
-                "editor.action.goToImplementation"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "u"
-            ],
-            "commands": [
-                "editor.action.goToReferences"
-            ]
-        },
-    ],
-    // vim insert mode
-    "vim.insertModeKeyBindings": [],
-    // vim visual mode
-    "vim.visualModeKeyBindings": [
-        // Stay in visual mode while indenting
-        {
-            "before": [
-                "<"
-            ],
-            "commands": [
-                "editor.action.outdentLines"
-            ]
-        },
-        {
-            "before": [
-                ">"
-            ],
-            "commands": [
-                "editor.action.indentLines"
-            ]
-        },
-        // html element wrap
-        {
-            "before": [
-                "leader",
-                "e"
-            ],
-            "commands": [
-                "editor.emmet.action.wrapWithAbbreviation"
-            ]
-        },
-        // Move selected lines while staying in visual mode
-        {
-            "before": [
-                "J"
-            ],
-            "commands": [
-                "editor.action.moveLinesDownAction"
-            ]
-        },
-        {
-            "before": [
-                "K"
-            ],
-            "commands": [
-                "editor.action.moveLinesUpAction"
-            ]
-        },
-        // toggle comment selection
-        {
-            "before": [
-                "leader",
-                "c"
-            ],
-            "commands": [
-                "editor.action.commentLine"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "<S-c>"
-            ],
-            "commands": [
-                "editor.action.blockComment"
-            ]
-        }
-    ],
-    // formatting & linting
-    // "editor.formatOnSave": false,
-    // "editor.formatOnType": true,
-    // "editor.codeActionsOnSave": {
-    //     "source.fixAll.eslint": true
-    // },
+    // nerdtree shortcut delegation
+
+    "vim.handleKeys": {
+        "<C-n>": false,
+    },
+
+    // rust
+
+    "rust-analyzer.lens.enable": false,
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+
+    // formatting
+
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "editor.formatOnPaste": false, // required 
     "editor.formatOnType": false, // required
     "editor.formatOnSave": true, // optional 
     "editor.formatOnSaveMode": "file", // optional but recommended
+    
     // etc
+
     "editor.fontLigatures": false,
     "editor.minimap.enabled": false,
-    "github.copilot.advanced": {
-    
-    },
+    "github.copilot.advanced": {},
     "dotnet.codeLens.enableReferencesCodeLens": false,
-    "workbench.colorTheme": "After Dark",
-    "csharp.experimental.debug.hotReload": true,
+    "workbench.colorTheme": "One Monokai",
     "dotnet.unitTestDebuggingOptions": {},
     "files.eol": "\n",
     "github.copilot.enable": {
@@ -225,7 +68,6 @@
     "[csharp]": {
         "editor.defaultFormatter": "ms-dotnettools.csharp"
     },
-    "gitlens.plusFeatures.enabled": false,
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
     "inlineChat.showGutterIcon": true,
@@ -235,8 +77,15 @@
     "workbench.editor.enablePreview": false,
     "editor.renderWhitespace": "none",
     "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
     "typescript.updateImportsOnFileMove.enabled": "always",
+    "git.openRepositoryInParentFolders": "always",
+    "workbench.editorAssociations": {
+        "*.pdf": "latex-workshop-pdf-hook"
+    },
+    "github.copilot.editor.enableAutoCompletions": true,
+    "gitlens.mode.active": "zen",
+    "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
 }
