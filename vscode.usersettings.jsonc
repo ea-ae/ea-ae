@@ -2,7 +2,7 @@
     // editor
 
     "editor.lightbulb.enabled":"off",
-    "editor.inlayHints.enabled": "off",
+    "editor.inlayHints.enabled": "offUnlessPressed",
     
     // vim-specific editor settings
     
@@ -27,8 +27,10 @@
     // rust
 
     "rust-analyzer.lens.enable": false,
+    "rust-analyzer.check.command": "clippy",
+    "rust-analyzer.checkOnSave": true,
     "[rust]": {
-        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
     },
 
     // formatting
@@ -38,6 +40,18 @@
     "editor.formatOnType": false, // required
     "editor.formatOnSave": true, // optional 
     "editor.formatOnSaveMode": "file", // optional but recommended
+
+    // language-specific
+
+    "[vue]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
     
     // etc
 
@@ -45,7 +59,7 @@
     "editor.minimap.enabled": false,
     "github.copilot.advanced": {},
     "dotnet.codeLens.enableReferencesCodeLens": false,
-    "workbench.colorTheme": "One Monokai",
+    "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
     "dotnet.unitTestDebuggingOptions": {},
     "files.eol": "\n",
     "github.copilot.enable": {
@@ -57,28 +71,17 @@
     "html.format.wrapLineLength": 250,
     "vue.updateImportsOnFileMove.enabled": true,
     "vue.inlayHints.missingProps": true,
-    "vue.server.fullCompletionList": true,
     "omnisharp.organizeImportsOnFormat": true,
     "editor.codeActionWidget.includeNearbyQuickFixes": true,
-    "[vue]": {
-        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-    },
     "eslint.format.enable": true,
     "vue.codeLens.enabled": false,
-    "[csharp]": {
-        "editor.defaultFormatter": "ms-dotnettools.csharp"
-    },
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
-    "inlineChat.showGutterIcon": true,
     "errorLens.delay": 1000,
     "window.zoomLevel": -1,
     "editor.wordWrap": "on",
     "workbench.editor.enablePreview": false,
     "editor.renderWhitespace": "none",
-    "[typescript]": {
-        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-    },
     "javascript.updateImportsOnFileMove.enabled": "always",
     "typescript.updateImportsOnFileMove.enabled": "always",
     "git.openRepositoryInParentFolders": "always",
